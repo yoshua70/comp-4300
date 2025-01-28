@@ -12,3 +12,26 @@ $ cd build
 $ ninja
 ```
 
+## Project structure
+
+**build** : build result and output
+
+**src** : source location
+
+**include** : public headers
+
+**tests** : tests
+
+**external** : packages/projects used by the project
+
+**extra** : extra/optional submodules for the project
+
+**data** : non-source code aspects of the project
+
+**tool** : development utilities (build and refactoring scripts but not only)
+
+**docs** : project documentation
+
+**libs** : main project submodules
+
+
