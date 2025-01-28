@@ -17,8 +17,12 @@ $ ninja
 **build** : build result and output
 
 **src** : source location
+- Under _Separate Header Placement_, `src/` contains the compilable source code and _private_ headers
 
 **include** : public headers
+- The purpose of `include/` is to hold _public API_ headers
+- Consumers of a library using _Separate Header Placement_ should only be given the `include/` directory as the sole include search directory for the library's public interface
+- The library should have both its `include/` and `src/` directories as include search directories
 
 **tests** : tests
 
